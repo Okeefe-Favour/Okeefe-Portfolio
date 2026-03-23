@@ -16,8 +16,6 @@ body {
 }
 header {
   text-align: center;
-  /* background-image: linear-gradient(to bottom right, teal, white);
-   */
   background: teal;
   padding: 20px 0;
   margin-bottom: 1rem;
@@ -125,4 +123,133 @@ footer {
 .contact-section h2 {
   color: white;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding: 20px;
+  }
+  .about-section h2 {
+    margin-left: 0;
+  }
+  .about-section p {
+    margin-left: 0;
+  }
+  .skills-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 0;
+  }
+  .skills-section h2 {
+    margin-left: 0;
+  }
+  .projects-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding: 20px;
+  }
+  .projects-section h2 {
+    margin-left: 0;
+  }
+  .dive {
+    margin-left: 0;
+    width: 600px;
+  }
+  .dive2 {
+    margin-left: 0;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  header nav a:hover {
+    color: orange;
+  }
+  .about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-section h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .about-section p {
+    text-align: center;
+    margin-left: 0;
+  }
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .skills-section h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .button-cols {
+    display: grid;
+    gap: 0;
+  }
+  .projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-section h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .dive {
+    width: 300px;
+    margin-left: 0;
+    padding: 10px;
+  }
+  .dive2 {
+    width: 300px;
+    margin-left: 0;
+    padding: 10px;
+  }
+  footer {
+    display: grid;
+    gap: 2rem;
+  }
+  .footer-list h3 {
+    width: 300px;
+    font-size: 13px;
+  }
+  .footer-list p {
+    width: 300px;
+    font-size: 13px;
+  }
+  .contact-section h2 {
+    font-size: 13px;
+  }
 }
