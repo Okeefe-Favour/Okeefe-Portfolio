@@ -180,7 +180,7 @@ footer {
     width: 100%;
     height: auto;
     overflow: hidden;
-  }g
+  }
   header h1 {
     font-size: 1.5rem;
     margin-bottom: 20px;
@@ -200,7 +200,7 @@ footer {
     margin-left: 0;
   }
   .about-section p {
-    text-align: right;
+    text-align: start;
     margin-left: 0;
   }
   .skills-section {
