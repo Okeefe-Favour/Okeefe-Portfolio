@@ -94,6 +94,7 @@ header nav a:hover {
   margin-left: 300px;
   width: 700px;
   color: white;
+  gap: 10px;
 }
 .projects-section h2 {
   margin-left: 300px;
@@ -201,6 +202,7 @@ footer {
     margin-left: 0;
   }
   .about-section p {
+    width: 500px;
     text-align: center;
     margin-left: 0;
   }
