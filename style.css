@@ -413,7 +413,15 @@ footer p:not(.eyebrow) {
   }
   footer {
     flex-direction: column;
+    align-items: flex-start;
     padding: 55px 6vw;
     gap: 40px;
+  }
+  .contact-section {
+    width: 100%;
+  }
+  .dark-mode .social-link {
+    display: block;
+    color: var(--accent);
   }
 }
