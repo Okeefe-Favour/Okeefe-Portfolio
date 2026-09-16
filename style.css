@@ -358,6 +358,14 @@ footer p:not(.eyebrow) {
 .dark-mode footer {
   background: #0d1513;
 }
+.dark-mode footer {
+  color: #f8f6ed;
+}
+.dark-mode footer p:not(.eyebrow),
+.dark-mode .social-link,
+.dark-mode #copy-status {
+  color: #f8f6ed;
+}
 .dark-mode .project-card:hover {
   background: #27342f;
 }
