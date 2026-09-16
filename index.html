@@ -3,74 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
+    <meta
+      name="description"
+      content="The portfolio of Onojomete Okeefe Adaeze, a beginner web developer building responsive web experiences."
+    />
+    <title>Okeefe Adaeze | Web Developer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>ONOJOMETE OKEEFE ADAEZE</h1>
-      <p>Beginner Web Designer | HTML , CSS & JAVASCRIPT</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#Project">Projects</a>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Okeefe Adaeze home"
+          >OA<span>.</span></a
+        >
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          Dark mode
+        </button>
+      </div>
+      <div class="hero">
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="pics/hey.jpeg"
+            alt="Portrait of Onojomete Okeefe Adaeze"
+          />
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Available for learning opportunities</p>
+          <h1>ONOJOMETE<br /><span>OKEEFE ADAEZE</span></h1>
+          <p class="hero-copy">
+            Beginner web developer turning thoughtful layouts into clear,
+            responsive experiences.
+          </p>
+          <a class="primary-link" href="#projects"
+            >Explore my work <span aria-hidden="true">&#8595;</span></a
+          >
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a
+        ><a href="#projects">Projects</a>
       </nav>
     </header>
-
     <main>
-      <section class="about-section" id="about">
-        <h2>About Me</h2>
-        <p>
-          HI, I'm Onojomete Okeefe Adaeze, a beginner web developer skilled in
-          HTML, CSS and JAVASCRIPT. I enjoy building clean and responsive 
-          landing page and learning new design techniques.
-        </p>
-      </section>
-
-      <section class="skills-section" id="skills">
-        <h2>Skills</h2>
-        <div class="button-cols">
-          <button class="btn">HTML5</button>
-          <button class="btn">CSS3</button>
-          <button class="btn">FlexbOX Layout</button>
-          <button class="btn">Responsive Design</button>
-          <button class="btn">Javascript</button>
-        </div>
-      </section>
-
-      <section class="projects-section" id="Project">
-        <h2>Projects</h2>
-        <div class="dive">
-          <h3>Landing Page</h3>
+      <section class="about-section content-row" id="about">
+        <div class="section-label">01 / About</div>
+        <div class="section-content">
+          <h2>Curious by nature.<br /><em>Precise by practice.</em></h2>
           <p>
-            Designed and coded responsive landing page using HTML,CSS and
-            JAVASCRIPT.
+            Hi, I'm Onojomete Okeefe Adaeze, a beginner web developer skilled in
+            HTML, CSS and JavaScript, Currently learning React. I enjoy building
+            clean, responsive landing pages and learning new design techniques.
           </p>
         </div>
-        <div class="dive2">
-          <h3>Project Website Layout</h3>
-          <p>Built a simple  showcase page, focusing on spacing, alignment and visual hierachy.</p>
+      </section>
+      <section class="skills-section content-row" id="skills">
+        <div class="section-label">02 / Toolkit</div>
+        <div class="section-content">
+          <h2>Things I like<br /><em>to build with.</em></h2>
+          <div class="button-cols">
+            <button class="btn" type="button">HTML5</button
+            ><button class="btn" type="button">CSS3</button
+            ><button class="btn" type="button">Flexbox</button
+            ><button class="btn" type="button">Responsive design</button
+            ><button class="btn" type="button">JavaScript</button>
+          </div>
         </div>
-        <div class="dive2">
-          <h3>Personal Practice</h3>
-          <p>Built a simple profile webpage with a button that changes the backgroundcolor using javascript event listners.
-          </p>
-          <p>Built  a basic calculator that accepts  user inputs  and performs calculations such as multiplication, division, substraction and addition using javascript add event listners .</p>
+      </section>
+      <section class="projects-section" id="projects">
+        <div class="section-heading">
+          <div class="section-label">03 / Selected work</div>
+          <h2>Small projects,<br /><em>real progress.</em></h2>
         </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter-button active" type="button" data-filter="all">
+            All</button
+          ><button class="filter-button" type="button" data-filter="web">
+            Web</button
+          ><button class="filter-button" type="button" data-filter="practice">
+            Practice
+          </button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured" data-category="web">
+            <span class="project-number">01</span>
+            <h3>Landing Page</h3>
+            <p>
+              Designed and coded a responsive landing page using HTML, CSS and
+              JavaScript.
+            </p>
+            <span class="project-type">Web design</span>
+          </article>
+          <article class="project-card" data-category="web">
+            <span class="project-number">02</span>
+            <h3>Website Layout</h3>
+            <p>
+              Built a simple showcase page, focusing on spacing, alignment and
+              visual hierarchy.
+            </p>
+            <span class="project-type">Web layout</span>
+          </article>
+          <article class="project-card" data-category="practice">
+            <span class="project-number">03</span>
+            <h3>Practice Lab</h3>
+            <p>
+              Made a profile page with a color-changing button and a basic
+              calculator for everyday arithmetic.
+            </p>
+            <span class="project-type">JavaScript</span>
+          </article>
+        </div>
+        <p class="empty-state" hidden>No projects in this category yet.</p>
+      </section>
     </main>
     <footer>
       <section class="footer-list">
-      <h3> ONOJOMETE OKEEFE ADAEZE</h3>
-      <p>Beginner  web developer skilled in
-          HTML, CSS and JAVASCRIPT. I enjoy building a clean and responsive 
-          landing page and learning new design techniques.</p>
-</section>
-             <section class="contact-section">
-<h2>Contact</h2>
-<p>Email:keefe768@gmail.com</p>
-<p>Lagos Nigeria</p>
-        </section>
+        <p class="eyebrow">Let's make something clear.</p>
+        <h3>ONOJOMETE OKEEFE ADAEZE</h3>
+        <p>Beginner web developer based in Lagos, Nigeria.</p>
+      </section>
+      <section class="contact-section">
+        <h2>Contact</h2>
+        <button
+          class="email-button"
+          type="button"
+          data-email="keefe768@gmail.com"
+        >
+          keefe768@gmail.com <span aria-hidden="true">&#8599;</span>
+        </button>
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/in/okeefe-favour-adaeze-onojomete-20a4aa3aa?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn <span aria-hidden="true">&#8599;</span>
+        </a>
+        <a
+          class="social-link"
+          href="https://github.com/okeefe-favour"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub <span aria-hidden="true">&#8599;</span>
+        </a>
+        <p id="copy-status" role="status" aria-live="polite"></p>
+      </section>
     </footer>
- </body>
+    <script>
+      const themeToggle = document.querySelector(".theme-toggle");
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.toggle("dark-mode");
+        themeToggle.textContent = isDark ? "Light mode" : "Dark mode";
+        themeToggle.setAttribute("aria-pressed", isDark);
+        themeToggle.setAttribute(
+          "aria-label",
+          isDark ? "Switch to light mode" : "Switch to dark mode",
+        );
+      });
+      const filterButtons = document.querySelectorAll(".filter-button");
+      const projectCards = document.querySelectorAll(".project-card");
+      const emptyState = document.querySelector(".empty-state");
+      filterButtons.forEach((button) =>
+        button.addEventListener("click", () => {
+          filterButtons.forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+          const filter = button.dataset.filter;
+          let visibleCount = 0;
+          projectCards.forEach((card) => {
+            const visible =
+              filter === "all" || card.dataset.category === filter;
+            card.hidden = !visible;
+            if (visible) visibleCount += 1;
+          });
+          emptyState.hidden = visibleCount !== 0;
+        }),
+      );
+      document
+        .querySelector(".email-button")
+        .addEventListener("click", async (event) => {
+          const status = document.querySelector("#copy-status");
+          try {
+            await navigator.clipboard.writeText(
+              event.currentTarget.dataset.email,
+            );
+            status.textContent = "Email copied to clipboard.";
+          } catch {
+            status.textContent = "Email: keefe768@gmail.com";
+          }
+        });
+    </script>
+  </body>
 </html>
-    
