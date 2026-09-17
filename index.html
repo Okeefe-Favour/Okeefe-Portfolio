@@ -253,9 +253,9 @@
     </footer>
 
     <script>
-      // -----------------------------
+      // =============================
       // DARK MODE
-      // -----------------------------
+      // =============================
 
       const themeToggle = document.querySelector(".theme-toggle");
 
@@ -272,9 +272,9 @@
         );
       });
 
-      // -----------------------------
+      // =============================
       // PROJECT FILTER
-      // -----------------------------
+      // =============================
 
       const filterButtons = document.querySelectorAll(".filter-button");
 
@@ -310,6 +310,35 @@
           // Show empty message if no projects match
           emptyState.hidden = visibleCount !== 0;
         });
+      });
+
+      // =============================
+      // INTERSECTION OBSERVER
+      // =============================
+
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+        },
+      );
+
+      // Elements we want to animate
+      const revealElements = document.querySelectorAll(
+        ".content-row, .section-heading, .project-card, .footer-list, .contact-section",
+      );
+
+      revealElements.forEach((element) => {
+        element.classList.add("reveal");
+        observer.observe(element);
       });
     </script>
   </body>
