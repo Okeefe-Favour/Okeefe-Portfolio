@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="The portfolio of Onojomete Okeefe Adaeze, a beginner web developer building responsive web experiences."
     />
+
     <title>Okeefe Adaeze | Web Developer</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="site-header" id="top">
       <div class="header-inner">
-        <a class="brand" href="#top" aria-label="Okeefe Adaeze home"
-          >OA<span>.</span></a
-        >
+        <a class="brand" href="#top" aria-label="Okeefe Adaeze home">
+          OA<span>.</span>
+        </a>
+
         <button
           class="theme-toggle"
           type="button"
@@ -25,6 +30,7 @@
           Dark mode
         </button>
       </div>
+
       <div class="hero">
         <div class="hero-image-wrap">
           <img
@@ -33,109 +39,198 @@
             alt="Portrait of Onojomete Okeefe Adaeze"
           />
         </div>
+
         <div class="hero-content">
           <p class="eyebrow">Available for learning opportunities</p>
-          <h1>ONOJOMETE<br /><span>OKEEFE ADAEZE</span></h1>
+
+          <h1>
+            ONOJOMETE<br />
+            <span>OKEEFE ADAEZE</span>
+          </h1>
+
           <p class="hero-copy">
             Beginner web developer turning thoughtful layouts into clear,
             responsive experiences.
           </p>
-          <a class="primary-link" href="#projects"
-            >Explore my work <span aria-hidden="true">&#8595;</span></a
-          >
+
+          <a class="primary-link" href="#projects">
+            Explore my work <span aria-hidden="true">&#8595;</span>
+          </a>
         </div>
       </div>
+
       <nav aria-label="Main navigation">
-        <a href="#about">About</a><a href="#skills">Skills</a
-        ><a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
       </nav>
     </header>
+
     <main>
+      <!-- ABOUT -->
       <section class="about-section content-row" id="about">
         <div class="section-label">01 / About</div>
+
         <div class="section-content">
-          <h2>Curious by nature.<br /><em>Precise by practice.</em></h2>
+          <h2>
+            Curious by nature.<br />
+            <em>Precise by practice.</em>
+          </h2>
+
           <p>
             Hi, I'm Onojomete Okeefe Adaeze, a beginner web developer skilled in
-            HTML, CSS and JavaScript, Currently learning React. I enjoy building
+            HTML, CSS and JavaScript, currently learning React. I enjoy building
             clean, responsive landing pages and learning new design techniques.
           </p>
         </div>
       </section>
+
+      <!-- SKILLS -->
       <section class="skills-section content-row" id="skills">
         <div class="section-label">02 / Toolkit</div>
+
         <div class="section-content">
-          <h2>Things I like<br /><em>to build with.</em></h2>
+          <h2>
+            Things I like<br />
+            <em>to build with.</em>
+          </h2>
+
           <div class="button-cols">
-            <button class="btn" type="button">HTML5</button
-            ><button class="btn" type="button">CSS3</button
-            ><button class="btn" type="button">Flexbox</button
-            ><button class="btn" type="button">Responsive design</button
-            ><button class="btn" type="button">JavaScript</button>
+            <button class="btn" type="button">HTML5</button>
+            <button class="btn" type="button">CSS3</button>
+            <button class="btn" type="button">Flexbox</button>
+            <button class="btn" type="button">Responsive design</button>
+            <button class="btn" type="button">JavaScript</button>
           </div>
         </div>
       </section>
+
+      <!-- PROJECTS -->
       <section class="projects-section" id="projects">
         <div class="section-heading">
           <div class="section-label">03 / Selected work</div>
-          <h2>Small projects,<br /><em>real progress.</em></h2>
+
+          <h2>
+            Small projects,<br />
+            <em>real progress.</em>
+          </h2>
         </div>
+
         <div class="project-filters" role="group" aria-label="Filter projects">
           <button class="filter-button active" type="button" data-filter="all">
-            All</button
-          ><button class="filter-button" type="button" data-filter="web">
-            Web</button
-          ><button class="filter-button" type="button" data-filter="practice">
+            All
+          </button>
+
+          <button class="filter-button" type="button" data-filter="web">
+            Web
+          </button>
+
+          <button class="filter-button" type="button" data-filter="practice">
             Practice
           </button>
         </div>
+
         <div class="project-grid">
           <article class="project-card featured" data-category="web">
             <span class="project-number">01</span>
+
             <h3>Landing Page</h3>
+
             <p>
               Designed and coded a responsive landing page using HTML, CSS and
               JavaScript.
             </p>
+
             <span class="project-type">Web design</span>
           </article>
+
           <article class="project-card" data-category="web">
             <span class="project-number">02</span>
+
             <h3>Website Layout</h3>
+
             <p>
               Built a simple showcase page, focusing on spacing, alignment and
               visual hierarchy.
             </p>
+
             <span class="project-type">Web layout</span>
           </article>
+
           <article class="project-card" data-category="practice">
             <span class="project-number">03</span>
+
             <h3>Practice Lab</h3>
+
             <p>
               Made a profile page with a color-changing button and a basic
               calculator for everyday arithmetic.
             </p>
+
             <span class="project-type">JavaScript</span>
           </article>
         </div>
+
         <p class="empty-state" hidden>No projects in this category yet.</p>
       </section>
     </main>
+
+    <!-- FOOTER / CONTACT -->
     <footer>
       <section class="footer-list">
         <p class="eyebrow">Let's make something clear.</p>
+
         <h3>ONOJOMETE OKEEFE ADAEZE</h3>
+
         <p>Beginner web developer based in Lagos, Nigeria.</p>
       </section>
+
       <section class="contact-section">
         <h2>Contact</h2>
-        <button
-          class="email-button"
-          type="button"
-          data-email="keefe768@gmail.com"
+
+        <!-- FORMSPREE CONTACT FORM -->
+        <form
+          action="https://formspree.io/f/xqpakdoy"
+          method="POST"
+          class="contact-form"
         >
-          keefe768@gmail.com <span aria-hidden="true">&#8599;</span>
-        </button>
+          <label for="name">Name</label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Your message"
+            required
+          ></textarea>
+
+          <button class="email-button" type="submit">
+            Send Message
+            <span aria-hidden="true">&#8599;</span>
+          </button>
+        </form>
+
+        <!-- LINKEDIN -->
         <a
           class="social-link"
           href="https://www.linkedin.com/in/okeefe-favour-adaeze-onojomete-20a4aa3aa?utm_source=share_via&utm_content=profile&utm_medium=member_android"
@@ -144,6 +239,8 @@
         >
           LinkedIn <span aria-hidden="true">&#8599;</span>
         </a>
+
+        <!-- GITHUB -->
         <a
           class="social-link"
           href="https://github.com/okeefe-favour"
@@ -152,51 +249,68 @@
         >
           GitHub <span aria-hidden="true">&#8599;</span>
         </a>
-        <p id="copy-status" role="status" aria-live="polite"></p>
       </section>
     </footer>
+
     <script>
+      // -----------------------------
+      // DARK MODE
+      // -----------------------------
+
       const themeToggle = document.querySelector(".theme-toggle");
+
       themeToggle.addEventListener("click", () => {
         const isDark = document.body.classList.toggle("dark-mode");
+
         themeToggle.textContent = isDark ? "Light mode" : "Dark mode";
+
         themeToggle.setAttribute("aria-pressed", isDark);
+
         themeToggle.setAttribute(
           "aria-label",
           isDark ? "Switch to light mode" : "Switch to dark mode",
         );
       });
+
+      // -----------------------------
+      // PROJECT FILTER
+      // -----------------------------
+
       const filterButtons = document.querySelectorAll(".filter-button");
+
       const projectCards = document.querySelectorAll(".project-card");
+
       const emptyState = document.querySelector(".empty-state");
-      filterButtons.forEach((button) =>
+
+      filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
-          filterButtons.forEach((item) => item.classList.remove("active"));
+          // Remove active class from all buttons
+          filterButtons.forEach((item) => {
+            item.classList.remove("active");
+          });
+
+          // Add active class to clicked button
           button.classList.add("active");
+
           const filter = button.dataset.filter;
+
           let visibleCount = 0;
+
           projectCards.forEach((card) => {
             const visible =
               filter === "all" || card.dataset.category === filter;
+
             card.hidden = !visible;
-            if (visible) visibleCount += 1;
+
+            if (visible) {
+              visibleCount += 1;
+            }
           });
+
+          // Show empty message if no projects match
           emptyState.hidden = visibleCount !== 0;
-        }),
-      );
-      document
-        .querySelector(".email-button")
-        .addEventListener("click", async (event) => {
-          const status = document.querySelector("#copy-status");
-          try {
-            await navigator.clipboard.writeText(
-              event.currentTarget.dataset.email,
-            );
-            status.textContent = "Email copied to clipboard.";
-          } catch {
-            status.textContent = "Email: keefe768@gmail.com";
-          }
         });
+      });
     </script>
   </body>
 </html>
